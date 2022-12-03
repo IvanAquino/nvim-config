@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
     "williamboman/nvim-lsp-installer",
     "neovim/nvim-lspconfig",
   }
+  use { "jose-elias-alvarez/null-ls.nvim" }
   use { "windwp/nvim-autopairs" }
   use { "lukas-reineke/indent-blankline.nvim" }
   use { "editorconfig/editorconfig-vim" }
@@ -44,6 +45,7 @@ return require('packer').startup(function(use)
 
   use { 'lewis6991/gitsigns.nvim' }
 
+  use { "RRethy/vim-illuminate" }
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
