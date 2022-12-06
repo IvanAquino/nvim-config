@@ -78,6 +78,11 @@ lspconfig.sumneko_lua.setup {
   },
 }
 
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  flags     = lsp_flags,
+}
+
 lspconfig.intelephense.setup {
   on_attach = on_attach,
   flags     = lsp_flags,
@@ -85,7 +90,7 @@ lspconfig.intelephense.setup {
 
 lspconfig.tailwindcss.setup {
   on_attach = on_attach,
-  flags = lsp_flags,
+  flags     = lsp_flags,
 }
 
 --Enable (broadcasting) snippet capability for completion
