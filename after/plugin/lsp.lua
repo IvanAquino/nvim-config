@@ -1,6 +1,6 @@
-local lspinstaller_status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
+local lspinstaller_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
 
-if not lspinstaller_status_ok then
+if not lspinstaller_ok then
   return
 end
 
@@ -47,9 +47,9 @@ local lsp_flags = {
   debounce_text_changes = 150,
 }
 
-local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
+local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
 
-if not lspconfig_status_ok then
+if not lspconfig_ok then
   return
 end
 

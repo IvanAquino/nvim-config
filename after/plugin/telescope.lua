@@ -1,12 +1,12 @@
-local status_ok, telescope = pcall(require, "telescope")
+local ok, telescope = pcall(require, "telescope")
 
-if not status_ok then
+if not ok then
   return
 end
 
-local tbuiltin_status_ok, telescope_builtin = pcall(require, "telescope.builtin")
+local tbuiltin_ok, telescope_builtin = pcall(require, "telescope.builtin")
 
-if not tbuiltin_status_ok then
+if not tbuiltin_ok then
   return
 end
 
