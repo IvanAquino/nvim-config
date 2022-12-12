@@ -42,4 +42,5 @@ if pale_ok then
   palenightfall.setup()
 end
 
-vim.cmd("colorscheme tokyonight-storm")
+--vim.cmd("colorscheme tokyonight-storm")
+vim.cmd("colorscheme gruvbox-baby")
